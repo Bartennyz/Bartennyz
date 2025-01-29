@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>😄 Bartenny! 😄</title>
+  <style>
+    /* Background gradient animation */
+    body {
+      background: linear-gradient(135deg, #569784, #26979b, #3d50ff);
+      background-size: 400% 400%;
+      animation: backgroundMove 10s ease infinite;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    @keyframes backgroundMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Glowing text animation */
+    @keyframes glowMove {
+      0% {
+        text-shadow: 0 0 15px rgba(1, 255, 255, 0.7);
+      }
+      50% {
+        text-shadow: 0 0 25px rgba(1, 255, 255, 1), 0 0 40px rgba(1, 255, 255, 0.8);
+      }
+      100% {
+        text-shadow: 0 0 15px rgba(1, 255, 255, 0.7);
+      }
+    }
+
+    .glowing-text {
+      color: white;
+      font-size: 70px;
+      animation: glowMove 1.5s infinite alternate;
+      font-weight: bold;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: linear-gradient(to right, #ffffff, transparent);
+      margin: 30px 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      background: rgba(130, 211, 248, 0.3);
+      border: 2px solid rgba(130, 211, 248, 0.7);
+      border-radius: 25px;
+      color: white;
+      transition: all 0.3s;
+    }
+
+    a:hover {
+      background: rgba(130, 211, 248, 0.9);
+      color: #000;
+      box-shadow: 0 0 20px rgba(130, 211, 248, 0.9);
+    }
+
+    .icon img {
+      vertical-align: middle;
+      margin-left: 15px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .icon img:hover {
+      transform: scale(1.2);
+    }
+
+    .link-group {
+      margin-top: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="glowing-text">Отгоо суга</h1>
+  <hr>
+  <h2 style="display: inline-block; border-radius: 110px;">
+    This Is My Facebook
+    <span class="icon"><img src="Potos/Facebook.png" alt="Logo" width="60" height="60"></span>
+    &nbsp;&nbsp;
+  </h2>
+  <div class="link-group">
+    <b><a href="https://www.facebook.com/edigsgame.edigsgame" target="_blank" title="My Facebook">My Facebook</a></b>
+    <b><a href="Bart's Note.html" target="_blank" title="About My Facebook" style="margin-left: 20px;">About My Facebook</a></b>
+  </div>
+  <hr>
+  <h2 style="border-radius: 110px; font-size: 200%;">
+    This Is My Discord Group Invite
+    </h2>
+    <img src="Potos/discord1.png" alt="Logo" width="50px" height="50px" style="margain">
+  <div class="link-group">
+    <b><a href="https://discord.gg/hBrrrFHd" target="_blank" title="Discord">Discord Invite</a></b>
+    <b><a href="Discord's About.html" target="_blank" title="About My Discord Group" style="margin-left: 20px;">About My Discord Group</a></b>
+  </div>
+  <hr>
+  <div style="height: 200px; width: 2px; background-color: white; margin: 20px auto;"></div>
+</body>
+</html>
